@@ -19,5 +19,4 @@ def calculate_bmi(height,weight):
     return 0
 
 
-
 calculate_bmi(height=1.73,weight=57)
