@@ -1,5 +1,4 @@
 def calculate_bmi(height,weight):
-    
     #Prints out the height and weight beforehand
     print("Height = " + str(weight))
     print("Weight = " +  str(height))
