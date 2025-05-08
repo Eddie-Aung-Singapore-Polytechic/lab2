@@ -1,4 +1,4 @@
-def main():
+def main(): # The main function
     print("DevOps for AIoT (ET0735) ~ Lab 2 ~ Introduction to Python")
     display_main_menu()
     num_list = get_user_input()
@@ -11,12 +11,12 @@ def main():
     
     return 0
 
-def display_main_menu():
+def display_main_menu(): # Displays stuff
       print("Enter some numbers separated by commas (e.g. 5, 67, 32")
       
       return 0
 
-def get_user_input():
+def get_user_input(): # Gets input from the user ofc, also splits and converts the strings into floating points 
       input_text = input("Enter: ")
       numbers = input_text.split(",") #Splits the input text into a list of strings
       numbers_float = []
@@ -25,14 +25,14 @@ def get_user_input():
       
       return numbers_float
 
-def calc_average(de_list):
+def calc_average(de_list): # Average calculator. Literally
       sum_of_values = 0
       for i in de_list:
            sum_of_values += i
     
       return sum_of_values
     
-def find_min_max(de_other_list):
+def find_min_max(de_other_list): # Finds the minimum, maximum and returns both
       biggest_num = 0
       smallest_num = 0
       for i in de_other_list:
@@ -43,7 +43,7 @@ def find_min_max(de_other_list):
       
       return smallest_num,biggest_num
 
-def sort_temperature(temp_list):
+def sort_temperature(temp_list): # Just sorts the lists
       temp_list.sort()
       return temp_list
 
@@ -61,5 +61,5 @@ def calc_median_temperature(list_to_calculate):
     
       return median
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
         main()
