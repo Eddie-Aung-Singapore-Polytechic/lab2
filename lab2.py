@@ -53,13 +53,12 @@ def calc_median_temperature(list_to_calculate):
       sorted_list = []
       sorted_list = sort_temperature(list_to_calculate)
       length_of_list = len(sorted_list)
+      middle = length_of_list//2
       if (length_of_list % 2) == 0:
-            median = sorted_list[int((length_of_list+1)/2)]          
+            median = (sorted_list[middle] + sorted_list[middle-1])/2
       else:
-            first_middle_value = sorted_list[int((length_of_list+1)/2)]
-            second_middle_value = sorted_list[int(length_of_list/2)] 
-            median = (first_middle_value + second_middle_value) /2   
-    
+            median = sorted_list[middle] 
+
       return median
 
 if __name__ == "__main__": 
