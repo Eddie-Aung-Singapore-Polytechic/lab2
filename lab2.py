@@ -33,9 +33,10 @@ def calc_average(de_list): # Average calculator. Literally
       return sum_of_values
     
 def find_min_max(de_other_list): # Finds the minimum, maximum and returns both
-      biggest_num = 0
-      smallest_num = 0
-      for i in de_other_list:
+      list_to_search = de_other_list.copy()
+      biggest_num = list_to_search[0]
+      smallest_num = list_to_search[0]
+      for i in list_to_search:
             if biggest_num < i :
                   biggest_num = i 
             if smallest_num > i :
